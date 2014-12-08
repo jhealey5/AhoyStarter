@@ -1,0 +1,92 @@
+// TYPE ==================================
+
+.text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.font-size(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 10);
+	font-size: ~"@{pxValue}px";
+	font-size: ~"@{remValue}rem";
+}
+
+
+// TRANSFORMS/TRANSITIONS ==================================
+.animation(@name, @duration: 300ms, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+			animation: @name @duration @delay @ease;
+}
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+			transition: @transition;
+}
+
+.transform(@string) {
+	-webkit-transform: @string;
+    	-ms-transform: @string;  
+	 		transform: @string;
+}
+
+.scale(@factor) {
+  -webkit-transform: scale(@factor);  
+      -ms-transform: scale(@factor);  
+          transform: scale(@factor);  
+}
+
+.rotate(@deg) {
+	-webkit-transform: rotate(@deg);
+		-ms-transform: rotate(@deg);
+			transform: rotate(@deg);
+}
+
+.skew(@deg, @deg2) {
+	-webkit-transform: skew(@deg, @deg2);
+		-ms-transform: skew(@deg, @deg2);
+			transform: skew(@deg, @deg2);
+}
+
+.translate(@x, @y:0) {
+	-webkit-transform: translate(@x, @y);
+		-ms-transform: translate(@x, @y);
+			transform: translate(@x, @y);
+}
+
+.translate3d(@x, @y, @z: 0, @perspective: 300px) {
+  -webkit-perspective: @perspective; 
+      -ms-perspective: @perspective;
+          perspective: @perspective;
+
+	-webkit-transform: translate3d(@x, @y, @z);
+		-ms-transform: translate3d(@x, @y, @z);
+			transform: translate3d(@x, @y, @z);
+}
+
+.perspective(@perspective: 300px) {
+  -webkit-perspective: @perspective; 
+      -ms-perspective: @perspective;
+          perspective: @perspective;
+}
+
+.transform-origin(@x:center, @y:center) {
+	-webkit-transform-origin: @x @y;
+		-ms-transform-origin: @x @y;
+			transform-origin: @x @y;
+}
+
+
+// GRADIENTS ==================================
+.gradient(@from: #fff, @to: #000) {
+  background-color: @from;
+  background-image: -webkit-linear-gradient(top, @from, @to);
+  background-image:         linear-gradient(to bottom, @from, @to);
+}
+
+.horizontal-gradient(@from: #fff, @to: #000) {
+  background-color: @from;
+  background-image: -webkit-linear-gradient(left, @from, @to);
+  background-image:         linear-gradient(to right, @from, @to);
+}

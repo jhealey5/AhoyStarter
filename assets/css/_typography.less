@@ -1,0 +1,86 @@
+/* ================================ !TYPE & SELECTION */
+
+a { 
+	color: @brand;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: lighten(@brand, 10%);
+	}
+	&:active {
+		transform: translateY(1px);
+	}
+}
+
+::-moz-selection { background: @brand; color: #fff; text-shadow: none }
+::selection { background: @brand; color: #fff; text-shadow: none }
+
+
+body {
+	color: @body;
+	font-family: @copy;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @headings;
+	margin-bottom: 1.3em;
+	line-height: 1.2;
+}
+h1,
+.h1 {
+
+}
+h2,
+.h2 {
+
+}
+h3,
+.h3 {
+
+}
+h4,
+.h4 {
+
+}
+
+p {
+	line-height: 1.6;
+	margin-bottom: 1.5em;
+}
+
+blockquote {
+	font-style: italic;
+	padding: 20px;
+	background: #eee;
+	margin-bottom: 1.5em;
+
+	> p {
+		margin-bottom: 0;
+	}
+}
+
+ul,
+ol {
+	padding-left: 40px;
+	margin: 1.5em 0;
+	list-style-position: inside;
+	
+	li {
+		margin: 1em 0;
+	}
+}
+
+.wp-caption {
+    max-width: 100% !important;
+    margin-bottom: 20px;
+
+    > a {
+        display: block;
+    }
+}
+.wp-caption-text {
+    text-align: center;
+    font-size: 80%;
+    margin: .5em 0;
+}
