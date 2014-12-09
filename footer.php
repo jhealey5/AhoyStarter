@@ -6,10 +6,7 @@
 
 	<?php wp_footer(); ?>
 
-	<?php // jQuery via functions.php ?>
-
-	<script src="<?php bloginfo('template_directory'); ?>/js/min/plugins.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/min/main.min.js"></script>
+	<?php // Scripts via functions.php ?>
 
 </body>
 </html>
