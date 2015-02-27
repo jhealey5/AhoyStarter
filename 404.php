@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section role="main" class="page-content">
+	<main role="main" class="page-content">
 
 		<h1>This is somewhat embarrassing, isn&rsquo;t it?</h1>
 
@@ -14,7 +14,7 @@
 
 	    <p><a href="/">Go back to the homepage</a></p>
 
-	</section><?php //End .page-content ?>
+	</main><?php //End .page-content ?>
 
 
 	<?php get_sidebar(); ?>

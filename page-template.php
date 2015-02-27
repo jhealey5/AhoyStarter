@@ -6,7 +6,7 @@ Template Name: Template Name
 <?php get_header(); ?>
 
 	
-	<section role="main" class="page-content alignleft">
+	<main role="main" class="page-content alignleft">
 
 		
 
@@ -31,7 +31,7 @@ Template Name: Template Name
 
 
 
-	</section><?php //End .page-content ?>
+	</main><?php //End .page-content ?>
 
 
 	<?php get_sidebar(); ?>

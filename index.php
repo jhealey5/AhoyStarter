@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="<?php echo get_post_type(); ?>-archive" class="clearfix">
+<main id="<?php echo get_post_type(); ?>-archive" class="clearfix">
 	<div class="wrap">
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
@@ -19,7 +19,7 @@
 			<h2>Sorry no <?php echo $post_type->labels->name; ?> found</h2>
 		<?php endif; ?>
 	</div>
-</div>
+</main>
 
 <?php if (have_posts()) : ?>
 	<div id="pagination" class="clearfix">

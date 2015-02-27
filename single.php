@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section role="main" class="page-content alignleft">
+	<main role="main" class="page-content alignleft">
 	
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -45,7 +45,7 @@
 		<?php endif; ?>
 
 
-	</section><?php //End .page-content ?>
+	</main><?php //End .page-content ?>
 
 
 

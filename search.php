@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-	<section role="main" class="page-content alignleft">
+	<main role="main" class="page-content alignleft">
 
 
 		<?php if (have_posts()) : ?>
@@ -35,7 +35,7 @@
 		<?php endif; ?>
 
 
-	</section><?php // End .page-content ?>
+	</main><?php // End .page-content ?>
 
 
 
